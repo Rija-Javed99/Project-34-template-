@@ -8,7 +8,7 @@ var box1, box2, box3,box4,box5,box6,box7,box8,box9,box10,box11,box12,box13,box14
 var hero,monster,rope,ground;
 
 function preload() {
-  bg = loadImage("GamingBackground.png");
+  //load background img
 }
 
 function setup() {
@@ -52,7 +52,7 @@ function setup() {
 }
 
 function draw() {
-  background(bg);
+  background(//set loaded img);
   Engine.update(engine);
   ground.display();
   box1.display();
@@ -89,7 +89,7 @@ function draw() {
 }
 
 function mouseDragged() {
-  Matter.Body.setPosition(hero.body, { x: mouseX, y: mouseY });
+  //set mousedragged function
 }
 
 
